@@ -1,5 +1,7 @@
 /*
- *      Author: Taner Selim
+ *      Phash v1.0
+ *----------------------------------------------------------
+ *      Author: Taner Selim (Tanerius)
  *      Object that enables the site to work with hash-tags
  *
 */
@@ -32,7 +34,6 @@ var Phash = {
                 var tmp = window.location.href.split("#")[1].split("&");
                 for (var i=0; i<tmp.length; i++) {
                     item = tmp[i].split("=");
-                    //console.debug(item);
                     if (item[0]==hashTag) {
                         if(hashValue==''){
                             finalHash = finalHash+hashTag;
@@ -64,7 +65,6 @@ var Phash = {
     },
     getHash:function(hashTag){
         if (window.location.hash.length>0) {
-            //var tmp = location.hash.split("#")[1].split("&");
             var tmp = window.location.href.split('#')[1].split('&');
             var item;
             var length=tmp.length;

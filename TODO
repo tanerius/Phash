@@ -1,0 +1,2 @@
+- Create a callback after setting a hash
+- Solve the problems caused by async nature of setting hash
